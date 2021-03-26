@@ -1,12 +1,17 @@
 import React from 'react'
 
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 
+import nachos from '../data/nachos'
 export default () => {
     return (
-        <View>
-            <Text>Hello !</Text>
-        </View>
+        <SafeAreaView>
+            {nachos.map((item)=>{
+
+                return <Text>{item.name}</Text>
+
+            })}
+        </SafeAreaView>
 
     )
 

@@ -1,5 +1,6 @@
 // import uuid from "uuid/v4";
-import { uuid } from 'uuid/v4';
+import 'react-native-get-random-values'
+import {v4 as uuid } from 'uuid';
 
 export default [
   { id: uuid(), name: "Beans" },
