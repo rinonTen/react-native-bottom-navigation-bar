@@ -16,7 +16,11 @@ export default () => {
                 <FlatList data={list} renderItem={({ item, index }) => (
                     <ListItem name={item.name}
                         onFavouritePress={() => console.log('favvvvv')}
-                        isFavourite={index < 2} />
+                        isFavourite={index < 2} 
+                        onAddedSwipe={()=> alert('kkkk')}
+                        onDeleteSwipe={()=> alert('kkkkdddd')}
+                        />
+                        
                 )}
                     keyExtractor={(item) => item.id}
                     ItemSeparatorComponent={() => <Separator></Separator>}
