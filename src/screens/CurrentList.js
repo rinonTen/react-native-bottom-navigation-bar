@@ -9,6 +9,14 @@ import { v4 as uuid } from 'uuid';
 export default () => {
 
     const [list, setList] = useState(nachos)
+
+    const addItem = (text) =>{
+        setList([{ id: uuid(), name: text }, ...list])
+    }
+    const removeItem = (id) =>{
+        const newList = list.filter(item=> item.id !== id)
+        setList(newList)
+    }
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <KeyboardAvoidingView style={{ flex: 1 }}>
@@ -17,16 +25,14 @@ export default () => {
                     <ListItem name={item.name}
                         onFavouritePress={() => console.log('favvvvv')}
                         isFavourite={index < 2} 
-                        onAddedSwipe={()=> alert('kkkk')}
-                        onDeleteSwipe={()=> alert('kkkkdddd')}
+                        onAddedSwipe={()=>removeItem(item.id)}
+                        onDeleteSwipe={()=> removeItem(item.id)}
                         />
                         
                 )}
                     keyExtractor={(item) => item.id}
                     ItemSeparatorComponent={() => <Separator></Separator>}
-                    ListHeaderComponent={() => <AddItem onSubmitEditing={({ nativeEvent: { text } }) => {
-                        setList([{ id: uuid(), name: text }, ...list])
-                    }} />}
+                    ListHeaderComponent={() => <AddItem onSubmitEditing={({ nativeEvent: { text } }) =>addItem(text)} />}
                 />
             </KeyboardAvoidingView>
         </SafeAreaView>)
