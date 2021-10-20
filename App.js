@@ -7,20 +7,14 @@ import { FavoriteScreen } from './src/screens/Favorite';
 import { DetailsScreen } from './src/screens/Details';
 import { IconsScreen } from './src/screens/Icons';
 import { ProfileScreen } from './src/screens/Profile';
-
-const homeName = 'Home';
-const favoriteName = 'Favorite';
-const detailsName = 'details';
-const settingsName = 'Settings';
-const anotherName = 'Other';
-const profileName = 'Profile';
+ 
 
 const Tab = createBottomTabNavigator();
 
 function MainContainer() {
   return (
     <NavigationContainer>
-      <Tab.Navigator initialRouteName={homeName}>
+      <Tab.Navigator initialRouteName={"Home"}>
         <Tab.Screen
           options={{
             tabBarLabel: '',
@@ -28,7 +22,7 @@ function MainContainer() {
               return <HomeIcon isActive={focused} />;
             },
           }}
-          name={homeName}
+          name={"Home"}
           component={HomeScreen}
         />
         <Tab.Screen
@@ -38,7 +32,7 @@ function MainContainer() {
               return <FavoriteScreenIcon isActive={focused} />;
             },
           }}
-          name={favoriteName}
+          name={"Favorite"}
           component={FavoriteScreen}
         />
         <Tab.Screen
@@ -48,7 +42,7 @@ function MainContainer() {
               return <DetailsScreenIcon isActive={focused} />;
             },
           }}
-          name={detailsName}
+          name={"Details"}
           component={DetailsScreen}
         />
         <Tab.Screen
@@ -58,7 +52,7 @@ function MainContainer() {
               return <MenuScreenIcon isActive={focused} />;
             },
           }}
-          name={anotherName}
+          name={"Icons"}
           component={IconsScreen}
         />
         <Tab.Screen
@@ -68,7 +62,7 @@ function MainContainer() {
               return <ProfileScreenIcon isActive={focused} />;
             },
           }}
-          name={profileName}
+          name={"Profile"}
           component={ProfileScreen}
         />
       </Tab.Navigator>
