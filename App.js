@@ -1,9 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
- 
-import {Image, Text, View} from 'react-native';
-
+import {Text, View} from 'react-native';
+import {HomeIcon, FavoriteScreenIcon, DetailsScreenIcon, MenuScreenIcon, ProfileScreenIcon} from './src/components/Icons'
 
 function FavoriteScreen({navigation}) {
   return (
@@ -74,34 +73,60 @@ const profileName = 'Profile';
 
 const Tab = createBottomTabNavigator();
 
-const HomeIcon = () => {
-    const starIcon = Platform.select({
-      ios: require('./src/assets/icons/home.png'),
-      android: require('./src/assets/icons/home.png'),
-    });
-    return <Image source={starIcon} resizeMode="contain" />
-};
-
-
 function MainContainer() {
-
-
   return (
     <NavigationContainer>
-      <Tab.Navigator
-        initialRouteName={homeName}>
+      <Tab.Navigator initialRouteName={homeName}>
         <Tab.Screen
           options={{
             tabBarLabel: '',
-            tabBarIcon: () => <HomeIcon />, 
+            tabBarIcon: ({focused}) => {
+              return <HomeIcon isActive={focused} />;
+            },
           }}
           name={homeName}
           component={HomeScreen}
         />
-        <Tab.Screen name={favoriteName} component={FavoriteScreen} />
-        <Tab.Screen name={detailsName} component={DetailsScreen} />
-        <Tab.Screen name={anotherName} component={AnotherScreen} />
-        <Tab.Screen name={profileName} component={ProfileScreen} />
+        <Tab.Screen
+          options={{
+            tabBarLabel: '',
+            tabBarIcon: ({focused}) => {
+              return <FavoriteScreenIcon isActive={focused} />;
+            },
+          }}
+          name={favoriteName}
+          component={FavoriteScreen}
+        />
+        <Tab.Screen
+          options={{
+            tabBarLabel: '',
+            tabBarIcon: ({focused}) => {
+              return <DetailsScreenIcon isActive={focused} />;
+            },
+          }}
+          name={detailsName}
+          component={DetailsScreen}
+        />
+        <Tab.Screen
+          options={{
+            tabBarLabel: '',
+            tabBarIcon: ({focused}) => {
+              return <MenuScreenIcon isActive={focused} />;
+            },
+          }}
+          name={anotherName}
+          component={AnotherScreen}
+        />
+        <Tab.Screen
+          options={{
+            tabBarLabel: '',
+            tabBarIcon: ({focused}) => {
+              return <ProfileScreenIcon isActive={focused} />;
+            },
+          }}
+          name={profileName}
+          component={ProfileScreen}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
