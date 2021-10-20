@@ -4,66 +4,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Text, View} from 'react-native';
 import {HomeIcon, FavoriteScreenIcon, DetailsScreenIcon, MenuScreenIcon, ProfileScreenIcon} from './src/components/Icons'
 
-function FavoriteScreen({navigation}) {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text
-        onPress={() => navigation.navigate('Home')}
-        style={{fontSize: 26, fontWeight: 'bold'}}>
-        Favorite Screen
-      </Text>
-    </View>
-  );
-}
-
-function DetailsScreen({navigation}) {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text
-        onPress={() => navigation.navigate('Home')}
-        style={{fontSize: 26, fontWeight: 'bold'}}>
-        Details Screen
-      </Text>
-    </View>
-  );
-}
-
-function AnotherScreen({navigation}) {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text
-        onPress={() => navigation.navigate('Home')}
-        style={{fontSize: 26, fontWeight: 'bold'}}>
-        Another Screen
-      </Text>
-    </View>
-  );
-}
-
-function ProfileScreen({navigation}) {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text
-        onPress={() => navigation.navigate('Home')}
-        style={{fontSize: 26, fontWeight: 'bold'}}>
-        Profile Screen
-      </Text>
-    </View>
-  );
-}
-
-function HomeScreen({navigation}) {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text
-        onPress={() => alert('This is the "Home" screen.')}
-        style={{fontSize: 26, fontWeight: 'bold'}}>
-        Home Screen
-      </Text>
-    </View>
-  );
-}
-
 const homeName = 'Home';
 const favoriteName = 'Favorite';
 const detailsName = 'details';
@@ -115,7 +55,7 @@ function MainContainer() {
             },
           }}
           name={anotherName}
-          component={AnotherScreen}
+          component={IconsScreen}
         />
         <Tab.Screen
           options={{
