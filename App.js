@@ -1,8 +1,12 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Text, View} from 'react-native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'; 
 import {HomeIcon, FavoriteScreenIcon, DetailsScreenIcon, MenuScreenIcon, ProfileScreenIcon} from './src/components/Icons'
+import { HomeScreen } from './src/screens/Home'; 
+import { FavoriteScreen } from './src/screens/Favorite';
+import { DetailsScreen } from './src/screens/Details';
+import { IconsScreen } from './src/screens/Icons';
+import { ProfileScreen } from './src/screens/Profile';
 
 const homeName = 'Home';
 const favoriteName = 'Favorite';
