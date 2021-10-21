@@ -17,7 +17,7 @@ yarn
 
 ### Environment variable
 
-To run this app locally, we need to add this file in the `androind` folder `local.properies`.
+To run this app locally, we need to add this file in the `androind` folder `local.properties`.
 
     1. For Linux Ubuntu users, you need to add this:
 
@@ -25,7 +25,7 @@ To run this app locally, we need to add this file in the `androind` folder `loca
 
     2. For Mac users: 
 
-        `sdk.dir = /Users/USERNAME/Library/Android/sdk`
+        `sdk.dir = /Users/username/Library/Android/sdk`
 
 ### Start the react native app:
 
