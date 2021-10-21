@@ -12,12 +12,8 @@ import {HomeScreen} from './src/screens/Home';
 import {FavoriteScreen} from './src/screens/Favorite';
 import {EskwelabsScreen} from './src/screens/Eskwelabs';
 import {BookmarksScreen} from './src/screens/Bookmarks';
-import {ProfileScreen} from './src/screens/Profile';
-import {StyleSheet} from 'react-native';
-
-const styles = StyleSheet.create({
-  tabBar: {paddingTop: 14, paddingBottom: 4},
-});
+import {ProfileScreen} from './src/screens/Profile'; 
+import {toolBarStyles as styles} from './styles'
 
 const Tab = createBottomTabNavigator();
 

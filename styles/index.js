@@ -9,3 +9,7 @@ export const screenStyles = StyleSheet.create({
   },
   text: {fontSize: 26, fontWeight: 'bold'},
 });
+
+export const toolBarStyles = StyleSheet.create({
+  tabBar: {paddingTop: 14, paddingBottom: 4},
+});
