@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, ScrollView} from 'react-native';
-import {screenStyles} from '../../styles';
+import { styles as screenStyles} from '../../styles';
 
 export function HomeScreen() {
   return (

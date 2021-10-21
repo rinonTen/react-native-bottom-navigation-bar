@@ -13,7 +13,7 @@ import {FavoriteScreen} from './src/screens/Favorite';
 import {EskwelabsScreen} from './src/screens/Eskwelabs';
 import {BookmarksScreen} from './src/screens/Bookmarks';
 import {ProfileScreen} from './src/screens/Profile'; 
-import {toolBarStyles as styles} from './styles'
+import { styles } from './styles'
 
 const Tab = createBottomTabNavigator();
 

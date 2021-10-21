@@ -1,19 +1,7 @@
 import React from 'react';
 import {Image, View, StyleSheet} from 'react-native';
-
-const styles = StyleSheet.create({
-  favoriteEllipse: {
-    marginTop: 6,
-    marginLeft: 11,
-  },
-  eskwelabsElipse: {
-    marginTop: 2,
-    marginLeft: 8,
-  },
-  image: {
-    marginTop: 12,
-  },
-});
+import { styles } from '../../styles';
+ 
 
 const elipse = Platform.select({
   ios: require('../assets/icons/ellipse.png'),
