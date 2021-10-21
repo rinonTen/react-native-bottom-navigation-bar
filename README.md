@@ -14,10 +14,18 @@ Clone the repo, `cd` into the directory, and run the following to install all de
 ```bash
 yarn
 ```
+
 ### Environment variable
+
 To run this app locally, we need to add this file in the `androind` folder `local.properies`.
-For Linux Ubuntu users, you need to add this: `sdk.dir = /home/username/Android/Sdk`.
-For Mac users: `sdk.dir = /Users/USERNAME/Library/Android/sdk`
+
+    1. For Linux Ubuntu users, you need to add this:
+
+        `sdk.dir = /home/username/Android/Sdk`.
+
+    2. For Mac users: 
+
+        `sdk.dir = /Users/USERNAME/Library/Android/sdk`
 
 ### Start the react native app:
 
