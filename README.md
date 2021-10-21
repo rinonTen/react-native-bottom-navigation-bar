@@ -36,3 +36,10 @@ yarn android
 
 If you don't have android studio running, you need to connect your android phone to run this app.
 
+### Screenshots
+
+![HomeScreen](./readme-assets/home-screen.png)
+
+![HomeScreen](./readme-assets/favorite-screen.png)
+
+![HomeScreen](./readme-assets/eskwelabs-screen.png)
