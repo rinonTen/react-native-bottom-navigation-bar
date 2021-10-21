@@ -16,7 +16,7 @@ import {ProfileScreen} from './src/screens/Profile';
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  tabBar: {paddingTop: 16, paddingBottom: 12}
+  tabBar: {paddingTop: 16, paddingBottom: 12},
 });
 
 const Tab = createBottomTabNavigator();
@@ -27,7 +27,7 @@ function MainContainer() {
       <Tab.Navigator initialRouteName={'Home'}>
         <Tab.Screen
           options={{
-              tabBarStyle: styles.tabBar,
+            tabBarStyle: styles.tabBar,
             tabBarLabel: '',
             tabBarIcon: ({focused}) => {
               return <HomeIcon isActive={focused} />;
@@ -41,7 +41,7 @@ function MainContainer() {
             tabBarStyle: styles.tabBar,
             tabBarLabel: '',
             tabBarIcon: ({focused}) => {
-              return  <FavoriteScreenIcon isActive={focused} />
+              return <FavoriteScreenIcon isActive={focused} />;
             },
           }}
           name={'Favorite'}
@@ -52,7 +52,7 @@ function MainContainer() {
             tabBarStyle: styles.tabBar,
             tabBarLabel: '',
             tabBarIcon: ({focused}) => {
-              return  <EskewlabsScreenIcon isActive={focused} />    
+              return <EskewlabsScreenIcon isActive={focused} />;
             },
           }}
           name={'Details'}

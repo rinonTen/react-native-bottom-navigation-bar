@@ -12,9 +12,8 @@ const styles = StyleSheet.create({
   },
   image: {
     marginTop: 12,
-  }
+  },
 });
-
 
 const elipse = Platform.select({
   ios: require('../assets/icons/ellipse.png'),
