@@ -4,13 +4,13 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   HomeIcon,
   FavoriteScreenIcon,
-  EskewlabsScreenIcon,
+  EskwelabsScreenIcon,
   BookmarksScreenIcon,
   ProfileScreenIcon,
 } from './src/components/Icons';
 import {HomeScreen} from './src/screens/Home';
 import {FavoriteScreen} from './src/screens/Favorite';
-import {EskewlabsScreen} from './src/screens/Eskewlabs';
+import {EskwelabsScreen} from './src/screens/Eskwelabs';
 import {BookmarksScreen} from './src/screens/Bookmarks';
 import {ProfileScreen} from './src/screens/Profile';
 import {StyleSheet} from 'react-native';
@@ -52,11 +52,11 @@ function MainContainer() {
             tabBarStyle: styles.tabBar,
             tabBarLabel: '',
             tabBarIcon: ({focused}) => {
-              return <EskewlabsScreenIcon isActive={focused} />;
+              return <EskwelabsScreenIcon isActive={focused} />;
             },
           }}
-          name={'Details'}
-          component={EskewlabsScreen}
+          name={'Eskwelabs'}
+          component={EskwelabsScreen}
         />
         <Tab.Screen
           options={{
@@ -66,7 +66,7 @@ function MainContainer() {
               return <BookmarksScreenIcon isActive={focused} />;
             },
           }}
-          name={'Icons'}
+          name={'Bookmarks'}
           component={BookmarksScreen}
         />
         <Tab.Screen
