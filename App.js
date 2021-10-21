@@ -16,10 +16,6 @@ import {ProfileScreen} from './src/screens/Profile';
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
-    paddingBottom: 32,
-    paddingTop: 32,
-  },
   tabBar: {paddingTop: 16, paddingBottom: 12}
 });
 
