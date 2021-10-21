@@ -3,11 +3,11 @@ import {Image, View, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   favoriteEllipse: {
-    marginTop: 8,
+    marginTop: 6,
     marginLeft: 11,
   },
-  detailsElipse: {
-    marginTop: 4,
+  eskwelabsElipse: {
+    marginTop: 2,
     marginLeft: 8,
   },
   image: {
@@ -73,7 +73,7 @@ export const EskwelabsScreenIcon = ({isActive}) => {
   return (
     <View style={styles.image}>
       <Image source={detailsIcon} resizeMode="contain" />
-      <Image style={styles.detailsElipse} source={elipse} />
+      <Image style={styles.eskwelabsElipse} source={elipse} />
     </View>
   );
 };
