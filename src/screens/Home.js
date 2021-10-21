@@ -1,12 +1,13 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import { screenStyles } from '../../styles';
 
 export function HomeScreen() {
     return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <View style={screenStyles.container}>
         <Text
           onPress={() => alert('This is the "Home" screen.')}
-          style={{fontSize: 26, fontWeight: 'bold'}}>
+          style={screenStyles.text}>
           Home Screen: Welcome to DLS
         </Text>
       </View>
