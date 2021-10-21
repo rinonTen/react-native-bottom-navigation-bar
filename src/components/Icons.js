@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
   }
 });
 
+
 const elipse = Platform.select({
   ios: require('../assets/icons/ellipse.png'),
   android: require('../assets/icons/ellipse.png'),
