@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.grocery2"
+        applicationId "com.bottomnavigation"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

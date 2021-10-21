@@ -1,4 +1,4 @@
-package com.grocery2;
+package com.bottomnavigation;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "grocery2";
+    return "bottomnavigation";
   }
 }

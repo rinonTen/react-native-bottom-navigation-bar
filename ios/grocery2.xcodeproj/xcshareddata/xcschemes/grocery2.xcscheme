@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "grocery2.app"
-               BlueprintName = "grocery2"
-               ReferencedContainer = "container:grocery2.xcodeproj">
+               BuildableName = "bottomnavigation.app"
+               BlueprintName = "bottomnavigation"
+               ReferencedContainer = "container:bottomnavigation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "grocery2Tests.xctest"
-               BlueprintName = "grocery2Tests"
-               ReferencedContainer = "container:grocery2.xcodeproj">
+               BuildableName = "bottomnavigationTests.xctest"
+               BlueprintName = "bottomnavigationTests"
+               ReferencedContainer = "container:bottomnavigation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "grocery2.app"
-            BlueprintName = "grocery2"
-            ReferencedContainer = "container:grocery2.xcodeproj">
+            BuildableName = "bottomnavigation.app"
+            BlueprintName = "bottomnavigation"
+            ReferencedContainer = "container:bottomnavigation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "grocery2.app"
-            BlueprintName = "grocery2"
-            ReferencedContainer = "container:grocery2.xcodeproj">
+            BuildableName = "bottomnavigation.app"
+            BlueprintName = "bottomnavigation"
+            ReferencedContainer = "container:bottomnavigation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
