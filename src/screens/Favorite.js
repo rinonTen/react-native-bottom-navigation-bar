@@ -7,7 +7,7 @@ export function FavoriteScreen({navigation}) {
         <Text
           onPress={() => navigation.navigate('Home')}
           style={{fontSize: 26, fontWeight: 'bold'}}>
-          Favorite Screen
+          Favorite Screen: Please love us and stay in touch
         </Text>
       </View>
     );

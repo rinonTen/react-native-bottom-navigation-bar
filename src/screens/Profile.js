@@ -7,7 +7,7 @@ export function ProfileScreen({navigation}) {
         <Text
           onPress={() => navigation.navigate('Home')}
           style={{fontSize: 26, fontWeight: 'bold'}}>
-          Profile Screen
+          Profile screen: This is the most inspiring profile that I have ever seen
         </Text>
       </View>
     );

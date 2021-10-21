@@ -58,7 +58,7 @@ export const FavoriteScreenIcon = ({isActive}) => {
   );
 };
 
-export const DetailsScreenIcon = ({isActive}) => {
+export const EskewlabsScreenIcon = ({isActive}) => {
   let detailsIcon;
   if (isActive) {
     detailsIcon = Platform.select({
@@ -79,7 +79,7 @@ export const DetailsScreenIcon = ({isActive}) => {
   );
 };
 
-export const MenuScreenIcon = ({isActive}) => {
+export const BookmarksScreenIcon = ({isActive}) => {
   let menuIcon;
   if (isActive) {
     menuIcon = Platform.select({

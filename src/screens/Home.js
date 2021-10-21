@@ -7,7 +7,7 @@ export function HomeScreen() {
         <Text
           onPress={() => alert('This is the "Home" screen.')}
           style={{fontSize: 26, fontWeight: 'bold'}}>
-          Home Screen
+          Home Screen: Welcome to DLS
         </Text>
       </View>
     );
