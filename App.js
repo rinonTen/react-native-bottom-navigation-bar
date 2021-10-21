@@ -16,7 +16,7 @@ import {ProfileScreen} from './src/screens/Profile';
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  tabBar: {paddingTop: 16, paddingBottom: 12},
+  tabBar: {paddingTop: 14, paddingBottom: 4},
 });
 
 const Tab = createBottomTabNavigator();
